@@ -40,6 +40,10 @@ NSString * const NYTPhotoViewControllerPhotoImageUpdatedNotification = @"NYTPhot
     return [self initWithPhoto:nil loadingView:nil notificationCenter:nil];
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    return [self initWithPhoto:nil loadingView:nil notificationCenter:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
