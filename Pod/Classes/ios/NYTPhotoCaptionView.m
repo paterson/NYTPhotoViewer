@@ -30,6 +30,10 @@ static const CGFloat NYTPhotoCaptionViewVerticalMargin = 12.0;
     return [self initWithAttributedTitle:nil attributedSummary:nil attributedCredit:nil];
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    return [self initWithAttributedTitle:nil attributedSummary:nil attributedCredit:nil];
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     
