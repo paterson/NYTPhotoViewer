@@ -24,6 +24,10 @@
     return [self initWithImage:nil frame:frame];
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    return [self initWithImage:nil frame:CGRectZero];
+}
+
 - (void)didAddSubview:(UIView *)subview {
     [super didAddSubview:subview];
     [self centerScrollViewContents];
