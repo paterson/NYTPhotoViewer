@@ -104,6 +104,8 @@ extern NSString * const NYTPhotosViewControllerDidDismissNotification;
  */
 - (void)updateImageForPhoto:(id <NYTPhoto>)photo;
 
+- (void)dismissAnimated:(BOOL)animated;
+
 @end
 
 /**
